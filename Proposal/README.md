@@ -11,7 +11,7 @@ The study aims to find out which covid-19 vaccination is most successful, by ana
 
 ## Dataset
 To achieve the goal of this study the dataset **COVID-19 All Vaccines Tweets** will be used. 
-This dataset can be found [here](https://www.kaggle.com/gpreda/all-covid19-vaccines-tweets) at Kaggle.
+This dataset can be found at [Kaggle](https://www.kaggle.com/gpreda/all-covid19-vaccines-tweets).
 
 
 This dataset contains tweets for the follwing vaccines:
@@ -24,22 +24,17 @@ This dataset contains tweets for the follwing vaccines:
 - Covaxin
 - Sputnik V
 
-The dataset is available as the ```.csv``` file. Each row contains the following features: 
-
+The dataset is available as the ```.csv``` file. a sample of data is shown in the folloing table:
 <table width="100%">
  <tr>
   <th>id</th><th>user_name</th><th>user_location</th><th>user_description</th><th>user_created</th><th>user_followers</th><th>user_friends</th><th>user_favourites</th><th>user_verified</th><th>date</th><th>text</th><th>hashtags</th><th>source</th><th>retweets</th><th>favorites</th><th>is_retweet</th>
  </tr>
  <tr>
-  <th>id</th><th>user_name</th><th>user_location</th><th>user_description</th><th>user_created</th><th>user_followers</th><th>user_friends</th><th>user_favourites</th><th>user_verified</th><th>date</th><th>text</th><th>hashtags</th><th>source</th><th>retweets</th><th>favorites</th><th>is_retweet</th>
+  <th>1359185637585354755</th><th>Sherri-Ann Burnett-Bowie, MD, MPH</th><th>Massachusetts, USA</th><th>NaN</th><th>2019-10-05 17:42:38</th><th>1051</th><th>717</th><th>1256</th><th>False</th><th>2021-02-09 17:01:23</th><th>48 hours post #Moderna #CovidVaccine. Had low ...
+</th><th>['Moderna', 'CovidVaccine']</th><th>Twitter for iPhone</th><th>6</th><th>74</th><th>False</th>
  </tr>
 </table>
-<!-- ```
-       id, user_name, user_location, user_description, user_created,
-       user_followers, user_friends, user_favourites, user_verified,
-       date, text, hashtags, source, retweets, favorites,
-       is_retweet
-``` -->
+
 
 Features such as **text**, which contained the tweet content, **date**, which included the tweet date, and **user_location** are used to identify the most important features for this study. 
 
