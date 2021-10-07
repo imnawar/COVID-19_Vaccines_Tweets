@@ -24,7 +24,7 @@ This dataset contains tweets for the follwing vaccines:
 - Covaxin
 - Sputnik V
 
-The dataset is available as the ```.csv``` file. a sample of data is shown in the folloing table:
+The dataset is available as the ```.csv``` file. a sample of data is shown in the following table:
 <table width="100%">
  <tr>
   <th>id</th><th>user_name</th><th>user_location</th><th>user_description</th><th>user_created</th><th>user_followers</th><th>user_friends</th><th>user_favourites</th><th>user_verified</th><th>date</th><th>text</th><th>hashtags</th><th>source</th><th>retweets</th><th>favorites</th><th>is_retweet</th>
