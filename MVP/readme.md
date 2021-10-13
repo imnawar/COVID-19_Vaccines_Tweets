@@ -10,7 +10,10 @@ The data explored in addition to the EDA phase is done.
 - Drop any unnecessary features
 - Clean the text of the tweets
 - Create one-hot-encoding for the vaccine type
+- Label the data using ```SentimentIntensityAnalyzer``` from ```nltk```
+- Apply the ```TfidfVectorizer```
+- Train and test a naive bayes model to classify the data and got 88.75%
 
 ## There are a few more steps to finish the project: 
-- Determine the class of tweets using sentiment analysis. 
-- train algorithms for classifying tweets. 
+- Use different models to classify the text. 
+- Try TextBlob in data labelling. 
