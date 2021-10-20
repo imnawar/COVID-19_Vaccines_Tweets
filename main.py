@@ -3,9 +3,8 @@ import os
 import argparse
 import pandas as pd
 from joblib import load
-from train_model import train
-from Deployment.app import run
-from Deployment.clean_data import clean_data, clean_text
+from Deployment.train_model import train
+from Deployment.clean_data import clean_data
 
 parser = argparse.ArgumentParser(description='Covid-19 Vaccines Tweets Analysis')
 parser.add_argument('-d', '--cleanedDataset', action='store_false', help='Use the clean dataset phase')
