@@ -131,6 +131,6 @@ dmypy.json
 
 
 # ignore pkl files
-Deployment/*.pkl
-*.pkl
-*/*.pkl
+# Deployment/*.pkl
+# *.pkl
+# */*.pkl
