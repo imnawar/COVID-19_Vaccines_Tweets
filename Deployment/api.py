@@ -12,7 +12,6 @@ def predict(model, input_df):
 
 
 def load_data():
-    # data = pd.read_csv(DATA_URL, nrows=nrows)
     data = pd.read_csv('../Data/VaccinesData.csv')
     lowercase = lambda x: str(x).lower()
     data.rename(lowercase, axis='columns', inplace=True)

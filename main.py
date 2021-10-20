@@ -5,7 +5,7 @@ import pandas as pd
 from joblib import load
 from train_model import train
 from Deployment.app import run
-from clean_data import clean_data, clean_text
+from Deployment.clean_data import clean_data, clean_text
 
 parser = argparse.ArgumentParser(description='Covid-19 Vaccines Tweets Analysis')
 parser.add_argument('-d', '--cleanedDataset', action='store_false', help='Use the clean dataset phase')
@@ -34,6 +34,5 @@ def main():
     df = read_dataset(args.cleanedDataset)
     model = prepare_model(args.train, df)
     if args.api:
-        os.system('streamlit run main.py')
-        run(model)
+        os.system('streamlit run api.py')
 if __name__ == '__main__':main()
