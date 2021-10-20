@@ -5,21 +5,19 @@ from joblib import load
 import matplotlib.pyplot as plt
 from clean_data import clean_text
 
-model = load('rf_pipeline.pkl')
+model = load('Deployment/rf_pipeline.pkl')
 
 def predict(model, input_df):
     return model.predict([clean_text(str(input_df.text))])
 
 
 def load_data():
-    data = pd.read_csv('../Data/VaccinesData.csv')
+    data = pd.read_csv('Data/VaccinesData.csv')
     lowercase = lambda x: str(x).lower()
     data.rename(lowercase, axis='columns', inplace=True)
     return data
 
 st.title('Covid-19 Vaccines Analysis')
-
-
 
 # to use the pre-trained model in predecting 
 st.header("Use the pre-trained model to analyze your emotions about COVID-19 Vaccines ...!")
@@ -44,16 +42,24 @@ data_load_state.text('Loading data...done!')
 
 
 st.subheader('Number of positive/negative tweets')
-hist_values = np.histogram(data['blob_label'],  bins=2)[0]
-st.bar_chart(hist_values)
+fig = plt.figure()
+plt.hist(data['blob_label'])
+plt.title('The positive vs negative tweets')
+plt.xlabel('label')
+plt.xticks([0, 1],['Neg', 'Pos'])
+plt.ylabel('number of tweets')
+st.pyplot(fig)
 
 
-fig = plt.figure(figsize=(45,40))
-for i, group in data.groupby('date'):
-    plt.bar(group['date'].iloc[0].month,group['clean_text'].count())
+st.subheader('Number of tweets per month')
+data['date'] = pd.to_datetime(data['date'])
+data['month'] = pd.DatetimeIndex(data['date']).month
+fig = plt.figure(figsize=(25,20))
+for i, group in data.groupby('month'):
+    plt.bar(group['month'].iloc[0],group['clean_text'].count())
 plt.ylabel('number of tweets')
 plt.xlabel('date')
-plt.xticks(rotation=90)
+plt.xticks(range(12), ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+          'August', 'September', 'October', 'November', 'December'])
 plt.title('Number of tweets/Day'); 
-
 st.pyplot(fig)

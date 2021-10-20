@@ -23,7 +23,7 @@ def read_dataset(cleaning_flag):
 def prepare_model(training_flag, df):
     if training_flag:
         print("USE A PRETRAINED RF")
-        return load('rf_pipeline.pkl')
+        return load('Deployment/rf_pipeline.pkl')
     else: 
         print("START MODELS TARINING PHASE")
         return train(df)
@@ -33,5 +33,5 @@ def main():
     df = read_dataset(args.cleanedDataset)
     model = prepare_model(args.train, df)
     if args.api:
-        os.system('streamlit run api.py')
+        os.system('streamlit run Deployment/api.py')
 if __name__ == '__main__':main()
