@@ -30,7 +30,7 @@ Naive bayes, and random forest were used to classify the tweets. The naive bayes
 
 ***Model Evaluation and Selection***
 
-Logistic regression, naive Bayes, and random forest were used to classify the tweets. The naive Bayes get the higher accuracy with Blob text labeling. The models were trained on a 25/75 train vs. test. Each model train twice on sentiment analysis labels and bold text labels. 
+Naive Bayes, and random forest were used to classify the tweets. The naive Bayes get the higher accuracy with Blob text labeling. The models were trained on a 25/75 test vs. train. Each model train twice on sentiment analysis labels and bold text labels. 
 The official metric was the accuracy of the model, where the model tested on the accuracy, precision, recall, and F1 score. The result of used model: 
 - Accuracy: 97%
 - Precision: 95%
