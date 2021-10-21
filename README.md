@@ -2,7 +2,7 @@
 Manal Nawar Allahyani. 
 
 ## Abstract
-This project aimed to understand people's emotions about the covid-19 vaccines by analyzing the tweets using machine learning models to help the safety of society, and know the most covid-19 vaccine that is comfortable for the people. The used data in this project is provided by Kaggle, the data is labeled using Sentiment Intensity Analyzer, with sklearn library random forest was trained and get 96.86% accuracy. The streamlit is used to build an interactive dashboard to visualize and communicate the final results. 
+This project aimed to understand people's emotions about the covid-19 vaccines by analyzing the tweets using machine learning models to help the safety of society, and know the most covid-19 vaccine that is comfortable for the people. The used data in this project is provided by Kaggle, the data is labeled using Sentiment Intensity Analyzer, with sklearn library random forest was trained and get 97% accuracy. The streamlit is used to build an interactive dashboard to visualize and communicate the final results. 
 
 <!-- The data has been explored, cleaned, and new features such as labeling the tweets 0 for negative tweets and 1 for positive tweets have been added, as well as on-hot-encoding for the vaccine type has been added.  -->
 
@@ -48,7 +48,7 @@ The official metric was the accuracy of the model, where the model tested on the
 
 ## Communication
 
-The slides are provided [here](), besides details are provided at the [readme](https://github.com/imnawar/COVID-19_Vaccines_Tweets/blob/main/project_readme.md) of the project.
+The slides are provided [here](https://github.com/imnawar/COVID-19_Vaccines_Tweets/blob/main/Presentation.pdf), besides details are provided at the [readme](https://github.com/imnawar/COVID-19_Vaccines_Tweets/blob/main/project_readme.md) of the project.
 Feel free to any pull requests. 
 
 <!-- # Usage 
