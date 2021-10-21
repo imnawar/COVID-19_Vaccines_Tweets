@@ -37,7 +37,7 @@ Or run ```pip install -r requirements.txt```, where all requirments are listed [
 
 ***Explore the steps***
 
-If you're interested in showing the steps and exploring the data, then the provided [notebook]() shows all details. 
+If you're interested in showing the steps and exploring the data, then the provided [notebook](https://github.com/imnawar/COVID-19_Vaccines_Tweets/blob/main/COVID_19_Vaccines_Tweets.ipynb) shows all details. 
 If you run the notebook after installing the requirements and gets an error in cleaning text, then un-comment the cell that downloads the nltk requirements. 
 
 
