@@ -48,7 +48,7 @@ The official metric was the accuracy of the model, where the model tested on the
 
 ## Communication
 
-The slides are provided [here](), besides details are provided at the [readme]() of the project.
+The slides are provided [here](), besides details are provided at the [readme](https://github.com/imnawar/COVID-19_Vaccines_Tweets/blob/main/project_readme.md) of the project.
 Feel free to any pull requests. 
 
 <!-- # Usage 
