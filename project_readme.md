@@ -24,7 +24,7 @@ If you are interested in doing all experiments with all phases you can run ```py
 
 ***Explore the steps***
 
-If you're interested in showing the steps and exploring the data, then the provided [notebook]() shows all details. 
+If you're interested in showing the steps and exploring the data, then the provided [notebook](https://github.com/imnawar/COVID-19_Vaccines_Tweets/blob/main/COVID_19_Vaccines_Tweets.ipynb) shows all details. 
 
 ## Tools
 
