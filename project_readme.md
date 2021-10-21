@@ -12,19 +12,34 @@ The dataset is provided in ```.csv``` format. It contains 19,3272 tweets, each t
 
 # Usage 
 
-To run this project you can run ```python main.py``` from your command line after installing the requirements listed at req.txt. This command will run the project with the developed API to show the results and use the pre-trained model in predicting sentiment. In addition this command will use the pre-processed data and the pre-trained model. 
+Before run the project, run the following commands to installing the requirements: 
+```
+pip install pandas
+pip install joblib
+pip install sklearn
+pip install textblob
+pip install streamlit
+pip install matplotlib
+pip install nltk
+```
+Or run ```pip install -r requirements.txt```, where all requirments are listed [here](https://github.com/imnawar/COVID-19_Vaccines_Tweets/blob/main/requirements.txt)
 
-run ```python main.py -api``` to do the experiment without the developed API using the pre-processed data and the pre-trained model. 
+- Then you can run th project by run ```python main.py``` from your command line. This command will run the project with the developed API to show the results and use the pre-trained model in predicting sentiment. In addition this command will use the pre-processed data and the pre-trained model. 
 
-run ```python main.py -c``` to do all data cleaning phase rather than use the pre-processed data. 
+- run ```python main.py -api``` to do the experiment without the developed API using the pre-processed data and the pre-trained model. 
 
-run ```python main.py -t``` this command will train a model rather than use the pre-trained model. 
+- run ```python main.py -c``` to do all data cleaning phase rather than use the pre-processed data. 
 
-If you are interested in doing all experiments with all phases you can run ```python main.py -c -t``` this command will show you the pre-processing steps then training model steps. 
+- run ```python main.py -t``` this command will train a model rather than use the pre-trained model. 
+
+- If you are interested in doing all experiments with all phases you can run ```python main.py -c -t``` this command will show you the pre-processing steps then training model steps. 
+
 
 ***Explore the steps***
 
-If you're interested in showing the steps and exploring the data, then the provided [notebook](https://github.com/imnawar/COVID-19_Vaccines_Tweets/blob/main/COVID_19_Vaccines_Tweets.ipynb) shows all details. 
+If you're interested in showing the steps and exploring the data, then the provided [notebook]() shows all details. 
+If you run the notebook after installing the requirements and gets an error in cleaning text, then un-comment the cell that downloads the nltk requirements. 
+
 
 ## Tools
 
@@ -34,4 +49,6 @@ If you're interested in showing the steps and exploring the data, then the provi
 - nltk for natural language processing
 - Matplotlib for plotting
 - streamlit for interactive visualizations
+
+
 
